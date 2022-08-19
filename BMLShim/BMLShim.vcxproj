@@ -154,6 +154,7 @@
     <ClInclude Include="ILogger.h" />
     <ClInclude Include="IMod.h" />
     <ClInclude Include="ModInfo.h" />
+    <ClInclude Include="ModLoader.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="RegisterBB.h" />
     <ClInclude Include="ScriptHelper.h" />
@@ -244,6 +245,7 @@
     <ClCompile Include="exports.cpp" />
     <ClCompile Include="Gui.cpp" />
     <ClCompile Include="IMod.cpp" />
+    <ClCompile Include="ModLoader.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

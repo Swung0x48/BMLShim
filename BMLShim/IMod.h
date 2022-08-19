@@ -28,7 +28,7 @@ struct BMLVersion {
 
 class BML_EXPORT IMod : public IMessageReceiver {
 public:
-	IMod(IBML* bml) {};
+	IMod(IBML* bml) : m_bml(bml) {}
 	virtual ~IMod();
 
 	virtual CKSTRING GetID() = 0;
@@ -59,6 +59,7 @@ public:
 	virtual void OnUnphysicalize(CK3dEntity* target) {};
 
 protected:
+	IBML* m_bml = nullptr;
 	virtual ILogger* GetLogger() final;
 	virtual IConfig* GetConfig() final;
 };
